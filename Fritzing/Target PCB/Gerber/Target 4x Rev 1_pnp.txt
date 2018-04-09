@@ -1,0 +1,67 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=Target 4x Rev 1
+*Date=09:12:04
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;10k;THT;57.3207;-39.3592;0;Bottom;R5
+2;;;6.52068;-74.9193;0;Bottom;Hole4
+3;;;2.00387;-19.1013;90;Bottom;TXT1
+4;;;2.13475;-29.3225;90;Bottom;TXT1
+5;;THT;14.1407;-17.7692;0;Bottom;J10
+6;;;2.1931;-39.0332;90;Bottom;TXT1
+7;;DIP (Dual Inline) [THT];58.5907;-48.2492;0;Bottom;U2
+8;10k;THT;57.3207;-74.9192;0;Bottom;R1
+9;220;THT;72.5607;-34.2792;0;Bottom;R6
+10;;THT;7.02869;-49.6462;0;Bottom;J3
+11;;DIP (Dual Inline) [THT];58.5907;-30.4692;0;Bottom;U3
+12;;THT;16.6807;-66.0292;0;Bottom;J1
+13;;THT;14.1407;-48.2492;0;Bottom;J7
+14;;THT;11.6007;-8.87924;0;Bottom;J11
+15;;;6.52068;-3.79925;0;Bottom;Hole3
+16;;;47.1676;-54.5923;0;Bottom;Via3
+17;220;THT;21.7607;-8.87924;180;Bottom;R10
+18;;DIP (Dual Inline) [THT];58.5907;-66.0292;0;Bottom;U1
+19;;THT;16.6807;-58.4092;0;Bottom;J2
+20;;;75.1007;-3.79925;0;Bottom;Hole2
+21;;[THT];23.5906;-18.7494;0;Bottom;S4
+22;220;THT;72.5607;-52.0592;0;Bottom;R4
+23;;;29.3783;-19.0159;0;Bottom;Via1
+24;;DIP (Dual Inline) [THT];40.8107;-19.0392;0;Bottom;U5
+25;;[THT];23.5906;-28.9094;0;Bottom;S3
+26;;DIP (Dual Inline) [THT];58.5907;-12.6892;0;Bottom;U4
+27;;;47.1676;-64.7681;0;Bottom;Via2
+28;;THT;14.1407;-27.9292;0;Bottom;J9
+29;;3 mm [THT];76.9497;-29.1994;-90;Bottom;LED3
+30;10k;THT;57.3207;-21.5792;0;Bottom;R7
+31;;;75.1007;-74.9193;0;Bottom;Hole1
+32;;3 mm [THT];76.9497;-46.9794;-90;Bottom;LED2
+33;220;THT;21.7607;-11.4192;180;Bottom;R9
+34;10k;THT;57.3207;-57.1392;0;Bottom;R3
+35;;THT;14.1407;-38.0892;0;Bottom;J8
+36;;THT;7.02869;-39.4862;0;Bottom;J4
+37;;[THT];23.5906;-49.2294;0;Bottom;S1
+38;;THT;7.02869;-19.1662;0;Bottom;J6
+39;;3 mm [THT];76.9497;-64.7594;-90;Bottom;LED1
+40;;[THT];23.5906;-39.0694;0;Bottom;S2
+41;;THT;7.02869;-29.3262;0;Bottom;J5
+42;;;29.9547;-72.5644;0;Bottom;TXT2
+43;220;THT;72.5607;-69.8392;0;Bottom;R2
+44;;;49.7071;-26.6596;0;Bottom;Via4
+45;;;11.346;-67.2358;0;Bottom;TXT1
+46;;;29.7121;-76.0148;0;Bottom;TXT2
+47;220;THT;72.5607;-16.4992;0;Bottom;R8
+48;;3 mm [THT];76.9497;-11.4194;-90;Bottom;LED4
+49;;;8.55459;-9.04967;90;Bottom;TXT1
+50;;;12.6031;-59.8001;0;Bottom;TXT1
+51;;;2.26131;-49.4215;90;Bottom;TXT1
+52;10k;THT;21.7607;-6.33924;0;Bottom;R11
