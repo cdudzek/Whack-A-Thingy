@@ -1,0 +1,20 @@
+16x2 LCD Display:
+Pad all to 16 characters to force whitespace to overwrite previous text
+
+1234567890123456
+================
+Game Board v0.1
+================
+Select Game:    
+Whack-A-Thingy
+Simon Sez What?
+Reaction Time
+================
+You pressed the
+SELECT button!
+================
+Game not yet    
+implemented.    
+================
+Enable Button i 
+# of Buttons:   

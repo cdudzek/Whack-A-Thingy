@@ -27,9 +27,9 @@ All hardware, software, and electronics used to create the board are (or soon wi
 The [Bill of Materials](https://github.com/cdudzek/Whack-A-Thingy/blob/master/Documents/Bill%20of%20Materials%20with%20Costs.xlsx) lists most of the electronics and hardware used in the build. The total cost of the build (not including some power tools and soldering equipment) was less than US$300. Many thanks to Adafruit for their awesome part selection at cheap prices!
 
 ### Arduino Mega and Source Code
-The Arduino folder contains all of the source files to build the game. 
+The GameBoard folder contains all of the Arduino source files to build the game. 
 
-The size of the code, memory footprint, and required I/Os for all of the game buttons required the use of an Arduino Mega controller (instead of an Uno). It is possible the game could be adpated to other controllers or platforms, but this is the only one I have tested with. 
+The size of the code, memory footprint, and required I/Os for all of the game buttons required the use of an Arduino Mega controller (instead of an Uno-compatible). It is possible the game could be adpated to other controllers or platforms, but this is the only one I have tested with. 
 
 #### Prerequisites
 * The [Adafruit RGB LCD Library](https://github.com/adafruit/Adafruit-RGB-LCD-Shield-Library) for Arduino is required to communicate with the [I2C RGB LCD Shield for Arduinos](https://www.adafruit.com/product/716).
