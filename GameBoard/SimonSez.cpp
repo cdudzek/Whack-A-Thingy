@@ -137,7 +137,7 @@ void SimonSez::RunGame() {
   lcd.print(steps);
   lcd.print("/");
   lcd.print(MaxMoves);
-  //delay(5000);
+  delay(3000);
   PressAnyKey(lcd);
   lcd.setBacklight(WHITE);
   lcd.clear();

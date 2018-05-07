@@ -149,11 +149,11 @@ void ReactionTime::RunGame() {
         lcd.setBacklight(GREEN);
         BestTime = hittime;
       }
-      delay(2000);
+      delay(3000);
     }
     else if (btns & BUTTON_SELECT) {
       lcd.print("Aborted");
-      delay(1000); 
+      delay(2000); 
       break;
     }
     else {

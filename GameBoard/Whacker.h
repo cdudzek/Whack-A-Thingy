@@ -15,7 +15,9 @@ struct WhackerLevel_T {
 };
 
 // Minimum time target must be off before reusing
-#define MIN_TIME_OFF 750
+#define MIN_TIME_OFF  750
+// Do not worry about checking for cheats in too fast of a game, too many false positives
+#define NOCHEAT_TIME  750
 
 class Whacker {
   public:

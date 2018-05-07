@@ -144,7 +144,8 @@ void Whacker::RunGame() {
     }
     
     // Check if we can spawn a new target
-    if (Active() < WhackerLevels[whLevel].maxspawns) {
+    if ((spawns < WhackerLevels[whLevel].totalspawns)
+        && (Active() < WhackerLevels[whLevel].maxspawns)) {
       if (millis() > (lasthit + random(DEBOUNCE, DEBOUNCE*10))) {   // roughly 150-1500ms
         if (SpawnNew()) {
           lastspawn = millis();
@@ -212,23 +213,27 @@ bool Whacker::SpawnNew() {
 
   Serial.println("Spawning button " + String(target));
 
-  // check for cheaters
-  digitalWrite(Targets[target].SwitchEnable, LOW);
-  if (digitalRead(Targets[target].SwitchRead) == LOW) {
-    // CHEATER!!!   Holding the button before we enable it
-    lcd.clear();
-    lcd.home();
-    lcd.setBacklight(VIOLET);
-    lcd.print(s_Cheater);
-    lcd.setCursor(0, 1);
-    lcd.print(s_ButtonDown);
-    delay(2000);
-    lcd.setCursor(0, 1);
-    lcd.print("Hit " + String(score) + "/" + String(spawns));
-    delay(3000);    
-    lcd.clear();
-    digitalWrite(Targets[target].SwitchEnable, HIGH);
-    return false;
+  // check for cheaters, unless we are in an extremely fast game
+  if (WhackerLevels[whLevel].timeout >= NOCHEAT_TIME) {
+    digitalWrite(Targets[target].SwitchEnable, LOW);
+    if (digitalRead(Targets[target].SwitchRead) == LOW) {
+      // CHEATER!!!   Holding the button before we enable it
+      lcd.clear();
+      lcd.home();
+      lcd.setBacklight(VIOLET);
+      lcd.print(s_Cheater);
+      lcd.setCursor(0, 1);
+      lcd.print(s_ButtonDown);
+      delay(2000);
+      lcd.setCursor(0, 1);
+      lcd.print(s_Blank);
+      lcd.setCursor(0, 1);
+      lcd.print("Hit " + String(score) + "/" + String(spawns));
+      delay(3000);    
+      lcd.clear();
+      digitalWrite(Targets[target].SwitchEnable, HIGH);
+      return false;
+    }
   }
 
   // Enable target and return good status
