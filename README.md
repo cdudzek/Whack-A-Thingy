@@ -35,14 +35,14 @@ The size of the code, memory footprint, and required I/Os for all of the game bu
 * The [Adafruit RGB LCD Library](https://github.com/adafruit/Adafruit-RGB-LCD-Shield-Library) for Arduino is required to communicate with the [I2C RGB LCD Shield for Arduinos](https://www.adafruit.com/product/716).
 
 ### Physical Board Design
-**CAD files coming soon.**
+The game board and components were designed in Solidworks. The CAD folder contains the original Solidworks models and assembly, as well as standard STEP files. The PDF file shows the components and assemblies.
 
 ### Electronics
 The project design includes a custom-designed circuit board to interface from the Arduino to the big target buttons. The board was designed in Fritzing, and includes all of the necessary files to send the board out for fabrication. 
 
 Each PCB controls 4 target buttons, so 2 are used for the 8 total game buttons. The price to have 3 boards fabricated with [OSHPark](https://oshpark.com/) was less than US$50.
 
-**The Frizting folder will soon include an overall game design showing the Arduino interfacing with the custom PCBs and all the target buttons.**
+I will be creating a Fritzing model for the custom PCBs, and plan to provide a full Fritzing assembly including the Arduino, custom PCBs, buttons, and all wiring. 
 
 ## License
 
